@@ -17,5 +17,6 @@ class WPJM_Factory extends WP_UnitTest_Factory {
 		parent::__construct();
 		require_once( dirname( __FILE__ ) . '/class-wp-unittest-factory-for-job-listing.php' );
 		$this->job_listing = new WP_UnitTest_Factory_For_Job_Listing( $this );
+		$this->job_type = new WP_UnitTest_Factory_For_Job_Listing( $this );
 	}
 }
